@@ -67,11 +67,6 @@ precmd() {
     set_title "`dirs`"
 }
 
-# macOS has a different SSH setup.
-if [ "$PLATFORM" = "linux" ]; then
-    export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
-fi
-
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 
