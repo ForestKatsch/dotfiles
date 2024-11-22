@@ -1,0 +1,12 @@
+[font]
+normal = { family = "Berkeley Mono" }
+size = 10
+
+[window]
+# Dim it a bit - the background is also blurred by Hyprland so it's not very distracting.
+opacity = 0.8
+dynamic_padding = true
+padding = { x = 4, y = 4 }
+
+[colors.primary]
+background = "#000000"
