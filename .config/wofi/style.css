@@ -1,0 +1,58 @@
+
+* {
+    outline: none;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: "Berkeley Mono";
+    border-radius: 0px;
+}
+
+/* pretty hacky, but this is to hide the search/clear icons. */
+#input > image.left {
+    -gtk-icon-transform:scaleX(0);
+}
+
+#input > image.right {
+    -gtk-icon-transform:scaleX(0);
+}
+
+/* the input box */
+#input {
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    color: #fff;
+    box-shadow: none;
+}
+
+/* results */
+#inner-box {
+    padding: 0;
+}
+
+#scroll {
+    border: none;
+}
+
+#entry {
+    padding: 10px 20px; /* Adjust padding for entries */
+    color: #ffffff; /* White text color */
+}
+
+#entry:selected {
+    background-color: #fff;
+    color: #000000;
+}
+
+#text:selected {
+    color: #000;
+}
+
