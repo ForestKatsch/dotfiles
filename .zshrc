@@ -69,4 +69,6 @@ precmd() {
 
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
+alias open="xdg-open"
 
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
