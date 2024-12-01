@@ -1,16 +1,26 @@
 # dotfiles
 
-![Example of this setup](Pictures/example.png)
+![example of this setup](pictures/example.png)
 
-[Wallpaper](Pictures/wallpaper.jpg)
+[wallpapers](pictures/)
+
+# keybindings
+
+- screenshotting (copies to the clipboard)
+  - `print screen` screenshots the active display
+  - `win + print screen` screenshots a selected window
+  - `win + shift + print screen` screenshots a selected region
 
 # hardware
 
-There's no requirements to match the hardware; but some configuration options depend on hardware-specific settings that might not behave the same if not present.
+there's no requirements to match the hardware; but some configuration options depend on hardware-specific settings that might not behave the same if not present.
 
-* nVidia GPU (affects some Hyprland settings)
-* Keychron K10 Pro, with [some keys remapped](hardware/keyboard/keychron-k10-pro-keymap.json) (notably, caps lock and ctrl are swapped)
-* Logitech G502 X wireless mouse at 800 dpi (unfortunately, needs to be configured with G Hub on Windows)
+- nVidia GPU (affects some Hyprland settings)
+  - `DP-1` 2560x1440 @ 144 (LG 27GL83A-B)
+  - `DP-2` 3840x2160 @ 60 (Samsung U28E510D)
+  - `DP-3` Valve Index / VR headset
+- Keychron K10 Pro, with [some keys remapped](hardware/keyboard/keychron-k10-pro-keymap.json) (notably, caps lock and ctrl are swapped)
+- Logitech G502 X wireless mouse at 800 dpi (unfortunately, needs to be configured with G Hub on Windows)
 
 # license
 
