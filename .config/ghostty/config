@@ -1,0 +1,16 @@
+# Linux-only: disable GTK decoration & titlebar
+window-decoration = false
+
+# Linux-only: used in combination with Hyprland blur.
+background-opacity = 0.8
+
+# don't ask to quit when closed
+confirm-close-surface = false
+
+background = 000000
+
+cursor-style = block
+shell-integration-features = no-cursor
+
+font-size = 11
+font-family = "Berkeley Mono"
