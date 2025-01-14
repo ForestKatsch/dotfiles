@@ -12,5 +12,5 @@ background = 000000
 cursor-style = block
 shell-integration-features = no-cursor
 
-font-size = 11
+font-size = 10
 font-family = "Berkeley Mono"
