@@ -4,6 +4,27 @@
 
 [wallpapers](pictures/)
 
+# using
+
+add this to your `.zshrc`:
+```
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+```
+
+then, run these commands to create a local repository and add this one as an origin:
+
+```
+git init --bare ~/.dotfiles
+dotfiles branch -m main
+dotfiles remote add origin https://github.com/ForestKatsch/dotfiles.git
+# (make sure you don't have any unstaged files)
+dotfiles branch --set-upstream-to origin/main main
+dotfiles pull
+dotfiles config --local status.showUntrackedFiles no
+```
+
+from now on, run `dotfiles pull` to update.
+
 # keybindings
 
 - screenshotting (copies to the clipboard)
