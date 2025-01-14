@@ -15,7 +15,7 @@ function take() {
 }
 
 # btw i use emacs
-EDITOR=$(which emacs)
+export EDITOR=$(which emacs)
 
 # Use colors with LS.
 if [ "$PLATFORM" = "linux" ]; then
