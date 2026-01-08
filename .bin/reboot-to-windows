@@ -1,3 +1,14 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+set -e
 
-systemctl reboot --boot-loader-entry=windows.conf
+# Find Windows Boot Manager entry
+WIN_ENTRY=$(bootctl list | awk '/Windows Boot Manager/{print $1; exit}')
+
+if [[ -z "$WIN_ENTRY" ]]; then
+  echo "Windows Boot Manager not found"
+  exit 1
+fi
+
+echo "Rebooting once into Windows (EFI entry $WIN_ENTRY)"
+sudo bootctl set-oneshot "$WIN_ENTRY"
+sudo reboot
