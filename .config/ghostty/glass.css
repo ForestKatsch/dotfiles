@@ -1,0 +1,7 @@
+/* GTK 4.24+ registers every window with the compositor's blur protocol
+ * (ext-background-effect-v1) and only requests blur where CSS applies a
+ * backdrop-filter. Without this rule Hyprland skips blur behind Ghostty.
+ * Hyprland's own decoration.blur settings control the actual look. */
+window {
+  backdrop-filter: blur(20px);
+}

@@ -1,0 +1,7 @@
+#!/bin/bash
+exec gamescope \
+  -W 1280 -H 800 -r 90 \
+  --backend headless \
+  --steam \
+  --rt \
+  -- bash -c 'export WAYLAND_DISPLAY=gamescope-0; unset DISPLAY; exec sunshine'

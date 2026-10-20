@@ -4,6 +4,10 @@ window-decoration = false
 # Linux-only: used in combination with Hyprland blur.
 background-opacity = 0.8
 
+# Linux-only: GTK 4.24+ only asks the compositor for blur where CSS requests it.
+# This stylesheet opts the window in so Hyprland blurs behind it again.
+gtk-custom-css = ~/.config/ghostty/glass.css
+
 # don't ask to quit when closed
 confirm-close-surface = false
 
